@@ -1,0 +1,17 @@
+$font-size: 30px;
+$font-family: arial, sans-serif;
+$cell-edge: 100px;
+$border: 1px solid #000;
+$gap: 1px;
+$base-color: #eee;
+$hover-color: #c57f9a;
+$last-days: 28, 29, 30, 31;
+$weekdays: (
+  mon: 0,
+  tue: 1 * ($cell-edge + $gap),
+  wed: 2 * ($cell-edge + $gap),
+  thu: 3 * ($cell-edge + $gap),
+  fri: 4 * ($cell-edge + $gap),
+  sat: 5 * ($cell-edge + $gap),
+  sun: 6 * ($cell-edge + $gap),
+);

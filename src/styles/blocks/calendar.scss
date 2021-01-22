@@ -1,0 +1,8 @@
+.calendar {
+  width: 7 * ($cell-edge + $gap);
+  display: flex;
+  margin: auto;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-top: 100px;
+}

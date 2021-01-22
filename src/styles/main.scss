@@ -1,3 +1,16 @@
+@import "__variables";
+@import "blocks/calendar";
+@import "blocks/calendar-days";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
 body {
   margin: 0;
 }
