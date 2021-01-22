@@ -1,24 +1,10 @@
 @each $day in $last-days {
   @for $i from 1 through $day {
     .calendar-#{$day} div:nth-child(#{$i}) {
-      width: $cell-edge;
-      height: $cell-edge;
-      margin: 0 $gap $gap 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: $border;
-      background-color: $base-color;
-      transition: background-color 0.5s, transform 0.5s;
-
+      @include cell-parameters;
+      @include transform;
       &::after {
         content: "#{$i}";
-      }
-
-      &:hover {
-        background-color: $hover-color;
-        cursor: pointer;
-        transform: translate(0, -20px);
       }
     }
   }
