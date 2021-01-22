@@ -5,4 +5,9 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   padding-top: 100px;
+
+  & div {
+    @include cell-parameters;
+    @include transform;
+  }
 }

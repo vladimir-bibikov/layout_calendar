@@ -1,8 +1,6 @@
 @each $day in $last-days {
   @for $i from 1 through $day {
     .calendar-#{$day} div:nth-child(#{$i}) {
-      @include cell-parameters;
-      @include transform;
       &::after {
         content: "#{$i}";
       }
